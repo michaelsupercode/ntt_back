@@ -11,7 +11,7 @@ async function _getDB() {
     const client = new MongoClient(url);
 
     const connected_client = await client.connect();
-    _db = connected_client.db("mongoDB");
+    _db = connected_client.db("nothingtotrashDB");
   }
   return _db;
 }
