@@ -24,7 +24,7 @@ app.use(express.json({ limit: "16mb" }));
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/", (_, res) => res.send("this server fuckin works quick and fine :)"));
+app.get("/", (_, res) => res.send("this server works quick and fine :)"));
 
 app.post("/api/users/register", (req, res) => {
   const username = req.body.username;
